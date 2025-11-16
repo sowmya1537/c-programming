@@ -41,7 +41,7 @@ void displayArray(const int *arr,int n){
         printf("%d",*(arr+i));
     }
     }
-  int sumArray(int*arr,int n){
+  int sumArray(const int*arr,int n){
     int sum=0;
     for(int i=0;i<n;i++){
         sum += *(arr +i);
@@ -64,4 +64,5 @@ int countNegative(const int*arr,int n)
     }
     return cnt;
 }
+
 
