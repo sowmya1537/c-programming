@@ -5,7 +5,7 @@
 int queue[SIZE];
 int front=-1,rear=-1;
 void enqueue(int value){
-if(rear=SIZE-1)
+if(rear==SIZE-1)
     printf("Queue Overflow! Cannot insert %d\n",value);
     else{
         if(front==-1)front=0;
@@ -35,3 +35,4 @@ int main(){
     display();
     return 0;
 }
+
